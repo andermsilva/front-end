@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="author" content=""/>
+        <meta name="description" content=""/>
+        <meta name='keywords' content=''/>
+<script type="text/javascript" src="scripts.js"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,500&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="main.css" type="text/css"/>
+
+        <title></title>
+    </head>
+    <body>
+        <header>
+          <div id="menu_moblie" onclick="clickMenu(true);">
+        
+              <div class="it" ></div>
+              <div class="it2"></div>
+              <div class="it3"></div>
+          </div>
+
+            <div class="search">
+
+                <input class="input-search" type="text" size="55"
+                    placeholder="Busque por uma empresa" />
+
+                <div class="img-search">
+                    <a href="#">
+
+                        <img src="./images/search-icon.svg" alt=""/>
+                    </a>
+
+                </div>
+
+            </div>
+
+                <div class="menu">
+
+                    <div class="ranking">
+                        <a href="#">
+                            
+                            Ranking nacional
+                        </a>
+                        
+                        
+                    </div>
+                    
+                    <div class="login">
+                        
+                        <img src="./images/user.svg" alt="">
+                        <a href="#">
+                            
+                            Entrar
+                        </a>
+                        
+                    </div>
+                </div>
+
+        </header>
+
+        <main>
+            <div class="container-item">
+                <div class="item-reclame">
+
+                    <div class="img-reclame">
+                        <img src="./images/reclame_aqui.jpg" width="280px" />
+                    </div>
+                    <div class="reclame-text">
+
+                        A melhor forma<br />
+                        de Solução de</br/>
+                        Conflito dos</br/>
+                        Consumidores
+
+                    </div>
+                </div>
+            </div>
+            <div class="container-item">
+                <div class="item-form">
+               
+                       <form class="_form">
+                          <h3 class="aling_text">Conte o que aconteceu</h3>
+                          <div class="whats-link">
+                         
+                                    <div style="width:fit-content;">
+
+                                        <img src="/images/whatsapp-brands.svg" />
+                                    </div>
+                                    <div style="width: fit-content;">
+                                        <a class="link-whats" href="#" target="_blank">
+
+                                            converse pelo whatsapp
+                                        </a>
+                                    </div>
+                              
+                            </div>
+                           
+
+                           <input class="inputForm" type="text" id="nome" placeholder="Nome">
+                           <input class="inputForm" type="text" id="email" placeholder="Email">
+                           <input class="inputForm" type="text" id="telefone" placeholder="Telefone">
+                           <input class="inputForm" type="text" id="empresa" placeholder="Nome da Empresa">
+                           <input class="inputForm" 
+                                  onkeyup="maskDate(this, this.value)" 
+                                  type="text" id="data" placeholder="Data do ocorrido" maxlength="35">
+                           <textarea  class="inputText" name="assunsto" cols="37" rows="5">
+
+                           </textarea>
+                               
+  
+                            <br />
+                            <div id="msg">
+                                <button class="bt-enviar" onclick="cadastro()">Enviar</button>
+                             </div>
+                          
+                             </a>
+                         </div> 
+                    </form>
+
+                </div>
+            </div>
+        </main>
+
+    </body>
+
+</html>
